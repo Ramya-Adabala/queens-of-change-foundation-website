@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f6f7fb;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f") center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff4d6d;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e63950;
+    transform: scale(1.05);
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: #ff4d6d;
+    margin-bottom: 15px;
+}
+
+/* MISSION */
+.mission {
+    padding: 60px 20px;
+    text-align: center;
+    background: white;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #f9f9f9;
+    padding: 25px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* IMAGE */
+.image-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.image-section img {
+    width: 80%;
+    max-width: 650px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.image-section p {
+    margin-top: 15px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* VOLUNTEER */
+.volunteer {
+    background: #ff4d6d;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.volunteer button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    background: white;
+    color: #ff4d6d;
+    font-size: 16px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.volunteer button:hover {
+    background: #222;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
